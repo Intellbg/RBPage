@@ -4,11 +4,78 @@
     <meta charset="utf-8">
     <title>Roberto Nicolas Burbano Pozo</title>
     <script data-ad-client="ca-pub-6676583149527853" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="static/style.css">
   </head>
   <body>
-    <div style="background-color:#b71c1c">
-          <img src="logo.png" alt="">
+
+
+
+
+    <nav>
+      <div class="nav-wrapper red darken-4" >
+        <a href="#!" class="brand-logo" >  <img src="logo.png" alt="" class="navarlogo"></a>
+        <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="cv.pdf">RESUME</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="cv.pdf">RESUME</a></li>
+    </ul>
+            
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/p1.jpg"></div>
     </div>
-    <h1>Develovement</h1>
-  </body>
+    <div class="section">
+      <div class="row container">
+        <h2 class="header">About Me</h2>
+        <p class="grey-text text-darken-3 lighten-3">
+          I am Nicolas Burbano an Ecuadorian software engineering student, willing to learn and become one of the best developers. As my path goes by here is a compilation of my work.
+        </p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/code.jpg"></div>
+    </div>
+    <div class="section">
+      <div class="row container">
+        <h2 class="header">WebPages</h2>
+        <p class="grey-text text-darken-3 lighten-3">
+          I have participated in the design process, codding and deployment of the following pages:
+        </p>
+        <ul>
+          <li><a href="https://www.rai-stones.com/">Rai-Stones</a>: It started as a WordPress page, later on the owner wanted it to be an static page to decrease cost. The page was re-made with HUGO and hosted via Google Cloud Platform with almost a $0.00 hosting fees </li>
+          <li><a href="https://www.cpmlogistic.com/">CPM Logistic</a>: My fist web-page ever deployed. I worked with a designer and made it real.</li> 
+        </ul>
+        
+        <h2 class="header">Games</h2>
+        <p class="grey-text text-darken-3 lighten-3">
+          Games where all my childhood, thats why ill be happy to showcase the ones I've made.
+        </p>
+        <ul>
+          <li><a href="https://github.com/Intellb/Laberinto-Cpp">Labyrinth</a>: My final project for my first codding class. A simple labyrinth video game made with C++, every level is generated randomly.</li>
+        </ul>
+        
+      </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+       $(document).ready(function(){
+          $('.parallax').parallax();
+          $('.sidenav').sidenav();
+      });
+    </script>
+
 </html>
