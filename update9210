@@ -1,0 +1,5 @@
+#! bin/bash
+sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list
+sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list.d/raspi.lis
+sudo apt-get update
+sudo apt-get -y dist-upgrade
